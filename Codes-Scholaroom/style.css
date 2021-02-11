@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+section{
+    padding: 20px 0;
+}
+
+.fee-box div, fee-details-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+header{
+    background-image: url(/Media/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .title{
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    color: #f1f1f1; /* Grey text */
+    width: 1140px; /* Full width */
+    padding: 20px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav li a:link{
+    padding: 8px 2px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    transition-property: border-bottom;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.cover-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.cover-text-box .btn-full:link, .cover-text-box .btn-full:visited{
+    margin-bottom: 10px;
+}
+
+.btn-full:link, .btn-full:visited, input[type=submit]{
+    background-color: black;
+    border: 1px solid red;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn:link, .btn:visited, input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited, input[type=submit]{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-top: 15px;
+}
+.introduction {
+    padding: 30px 0;
+    
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: blue;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.introduction-details {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 125%;
+}
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: blue;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+
+
+.feature {
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    max-width: 68rem;
+    margin: 3rem auto;
+}
+
+.feature__media {
+    width: calc(50% + 4rem);
+    margin-bottom: 4rem;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.feature__content {
+    width: 50%;
+    margin: 0 0 0 -4rem;
+    padding: 3rem 3rem 3rem 7rem;
+    position: relative;
+    border: 0.125rem solid blue;
+}
+
+.text-title-small {
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    letter-spacing: .125rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+}
+
+p{
+    text-align:justify;
+}
+
+.feature__content--alt {
+    order: -1;
+    margin: 0 -4rem 0 0;
+    padding-right: 7rem;
+    padding-left: 3rem;
+}
+
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-inline {
+    display: inline-block;
+}
+.fee-box, .fee-details-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.fee-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: red;
+}
+
+.fee-box ul {
+    list-style: none;
+}
+
+.fee-box ul li {
+    padding: 5px 0;
+}
+
+.section-fees {
+    background-color: #f4f4f4;
+}
