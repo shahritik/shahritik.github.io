@@ -184,13 +184,13 @@
             <div class="row">
                 <h2>BE A PART OF THIS JOURNEY!</h2>
             </div>
-            <form method="post" action="#" class="register-now">
+            <form id= "registrationForm" class="register-now" target="_self">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <input type="text" name="Name" id="name" placeholder="Your name" required>
                     </div>
                 </div>
                 <div class="row">
@@ -198,7 +198,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email address" required>
+                        <input type="email" name="Email" id="email" placeholder="Your email address" required>
                     </div>
                 </div>
                 <div class="row">
@@ -206,7 +206,7 @@
                         <label for="tel">Mobile Number</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="tel" name="tel" id="tel" placeholder="Your mobile number" required>
+                        <input type="tel" name="Phone" id="tel" placeholder="Your mobile number" required>
                     </div>
                 </div>
                 <div class="row">
@@ -214,7 +214,7 @@
                         <label for="grade">Grade</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <select name="grade" id="grade" required>
+                        <select name="Grade" id="grade" required>
                             <option value="sixth">6th</option>
                             <option value="seventh">7th</option>
                             <option value="eighth">8th</option>
@@ -228,7 +228,7 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="submit" value="REGISTER NOW!">
+                        <input onclick="SubmitForm()" type="button" value="REGISTER NOW!">
                     </div>
                 </div>
             </form>
@@ -257,6 +257,35 @@
                 <p>Copyright &copy; 2021 by Scholaroom. All rights reserved.</p>
             </div>
         </footer>
+        <script>
+            function SubmitForm (){
+
+                let allAreFilled = true;
+                document.getElementById("registrationForm").querySelectorAll("[required]").forEach(function(i) {
+                    if (!allAreFilled) return;
+                    //alert('Fill all the fields');
+                    // console.log(i);
+                    // console.log($("#registrationForm").serializeArray());
+                    if (!i.value) allAreFilled = false;
+                    // console.log(allAreFilled);
+                    
+                })
+                if (allAreFilled) {
+                    //alert('Fill all the fields');
+                    $.ajax({
+                    url:'https://api.apispreadsheets.com/data/8480/',
+                    type:'post',
+                    data:$("#registrationForm").serializeArray(),
+                    success: function(){
+                      alert("Registration complete!")
+                    },
+                    error: function(){
+                      alert("Something went wrong.")
+                    }
+                    });
+                }
+            }
+            </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
