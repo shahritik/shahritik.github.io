@@ -351,6 +351,7 @@ a:active{
     background-color: white;
     border-radius: 10px;
     width: 90%;
+    margin: auto;
     -webkit-box-shadow: 0 5px 5px #e2e2e2;
     box-shadow: 0 5px 5px #e2e2e2;
 }
