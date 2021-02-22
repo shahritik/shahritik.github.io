@@ -527,3 +527,30 @@ footer p{
     -webkit-animation-duration: 0.2s;
     animation-duration: 0.2s;
 }
+
+
+/*------------------------*/
+/* LOADER*/
+/*------------------------*/
+
+.loader {
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #2980b9;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
