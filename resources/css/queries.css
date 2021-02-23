@@ -103,6 +103,7 @@
         top: 4%;
         transform: translateX(50%);
         -ms-transform:translateX(50%);
+        width: auto;
     }
 
     .sticky .main-nav li a:link,
