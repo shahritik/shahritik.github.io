@@ -216,9 +216,10 @@ header {
     position: absolute;
     top: 3%;
     left: 5%;
-    height: 100px;
+    height: 12%;
     width: auto;
     float: left;
+    min-height: 60px;
     /* margin-top: 20px; */
 }
 
@@ -235,7 +236,7 @@ header {
 .main-nav{
     position: absolute;
     right: 7%;
-    top: 6%;
+    top: 7%;
     float: right;
     list-style: none;
     /* margin-top: 55px; */
