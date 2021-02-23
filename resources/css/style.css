@@ -117,6 +117,7 @@ input[type=button]{
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s;
     transition: background-color 0.2s, border 0.2s;
+    
 }
 
 .btn-full:link,
@@ -124,39 +125,13 @@ input[type=button]{
 input[type=button]{
     background-color: #2980b9;
     color: white;
-    /* border: 1px solid #2980b9; */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /* margin-right: 10px; */
+    
 }
 
 .btn-full:link,
 .btn-full:visited{
     border: 1px solid #20638f;
-}
-
-/* .btn-ghost:link, 
-.btn-ghost:visited{
-    
-    color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.btn-ghost:link, 
-.btn-ghost:visited{
-   
-    border: 1px solid #20638f;
-    color: white;
-} */
-
-.btn-ghost:link, 
-.btn-ghost:visited{
-    /* margin-left: 10px; */
-    /* border: 1px solid #2980b9; */
-    color: #20638f;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 5px;
 }
 
 .btn-ghost:link, 
@@ -165,6 +140,7 @@ input[type=button]{
     border: 1px solid #cac8c8;
     background-color: #f3f3f3;
     color: #20638f;
+    margin: 5px 5px;
 }
 
 .btn-ghost:hover, 
