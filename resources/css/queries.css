@@ -2,7 +2,7 @@
 /*big tablets to 1200px (widths smaller than the 1140px row)*/
 @media only screen and (max-width:1200px){
     .hero-text-box{
-        width: 100%;
+        width: 95%;
         padding: 0 2%;
     }
     
@@ -72,20 +72,18 @@
     }
     .main-nav{
         position: absolute;
-        right: 50%;
-        top: 4%;
-        transform: translateX(50%);
-        -ms-transform:translateX(50%);
+        right: 0%;
+        top: 0%;
+        background-color: #343531;
         float: right;
         list-style: none;
-        /* float: left; */
-        /* margin-top: 25px;
-        margin-left: 25px; */
+        width: 60%;
+        padding-top: 10%;
+        z-index: 1;
     }
     
     .main-nav li{
         margin-left: 0;
-        text-align: center;
         display: block;
     }
     
@@ -93,8 +91,9 @@
     .main-nav li a:visited{
         display: block;
         border: 0;
-        padding: 8px 0;
+        padding: 10px 4px;
         font-size: 100%;
+        text-align: left;
     }
 
     .sticky .main-nav{
@@ -109,6 +108,7 @@
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited{
         padding: 10px 0;
+        text-align: center;
     }
     
     .sticky .mobile-nav-icon {margin-top: 10px;}
