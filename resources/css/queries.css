@@ -71,12 +71,21 @@
         display: inline-block;
     }
     .main-nav{
-        float: left;
-        margin-top: 25px;
-        margin-left: 25px;
+        position: absolute;
+        right: 50%;
+        top: 4%;
+        transform: translateX(50%);
+        -ms-transform:translateX(50%);
+        float: right;
+        list-style: none;
+        /* float: left; */
+        /* margin-top: 25px;
+        margin-left: 25px; */
     }
     
     .main-nav li{
+        margin-left: 0;
+        text-align: center;
         display: block;
     }
     
@@ -90,6 +99,11 @@
 
     .sticky .main-nav{
         margin-top: 10px;
+        position: relative;
+        right: 50%;
+        top: 4%;
+        transform: translateX(50%);
+        -ms-transform:translateX(50%);
     }
 
     .sticky .main-nav li a:link,

@@ -213,10 +213,13 @@ header {
 }
 
 .logo{
+    position: absolute;
+    top: 3%;
+    left: 5%;
     height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .logo-black{
@@ -230,14 +233,17 @@ header {
 /* MAIN NAVIGATION */
 
 .main-nav{
+    position: absolute;
+    right: 7%;
+    top: 6%;
     float: right;
     list-style: none;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 }
 
 .main-nav li{
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 1.5em;
 }
 
 .main-nav li a:link,
@@ -270,6 +276,8 @@ header {
 }
 
 .sticky .main-nav{
+    position: relative;
+    right: 2%;
     margin-top: 18px;
 }
 
@@ -284,14 +292,19 @@ header {
 }
 .sticky .logo-black {
     display: block;
+    position: relative;
+    left: 2%;
 }
 
 
 /* MOBILE NAVIGATION */
 
 .mobile-nav-icon{
+    position: absolute;
+    right: 12%;
+    top: 5.5%;
     float: right;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     cursor: pointer;
     display: none;
 }
